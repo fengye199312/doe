@@ -90,7 +90,7 @@
 
 
     <!-- 开发环境 -->
-    <springProfile name="dev">
+    <springProfile name="prd">
         <root level="INFO">
             <appender-ref ref="STDOUT" />
         </root>
@@ -98,14 +98,14 @@
 
 
     <!-- 生产环境 -->
-    <springProfile name="prd">
-        <!--<include resource="org/springframework/boot/logging/logback/base.xml" />-->
-        <root level="INFO">
-            <appender-ref ref="asyncFileAppender" />
-            <appender-ref ref="ERROR" />
-            <appender-ref ref="WARN" />
-        </root>
-    </springProfile>
+<!--    <springProfile name="prd">-->
+<!--        &lt;!&ndash;<include resource="org/springframework/boot/logging/logback/base.xml" />&ndash;&gt;-->
+<!--        <root level="INFO">-->
+<!--            <appender-ref ref="asyncFileAppender" />-->
+<!--            <appender-ref ref="ERROR" />-->
+<!--            <appender-ref ref="WARN" />-->
+<!--        </root>-->
+<!--    </springProfile>-->
 
 
 </configuration>

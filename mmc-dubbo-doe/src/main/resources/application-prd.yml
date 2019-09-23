@@ -1,6 +1,6 @@
 # ====================server====================
 server:
-  port: 9876
+  port: 30000
 spring:
   thymeleaf:
     # 开发环境禁用页面缓存
@@ -12,7 +12,7 @@ spring:
   redis:
       # 数据库索引
       database: 0
-      host: 127.0.0.1
+      host: ${REDIS_HOST:127.0.0.1}
       port: 6379
       jedis:
           pool:

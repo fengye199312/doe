@@ -14,4 +14,3 @@ public class DubboDoeApplication {
         springApplication.run(args);
     }
 }
-
